@@ -15,4 +15,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home.index');
+
+Route::get('/about', function () {
+    return view('welcome');
+})->name('about.index');
+
+Route::get('/news', function () {
+    return view('welcome');
+})->name('news.index');
